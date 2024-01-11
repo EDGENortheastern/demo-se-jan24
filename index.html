@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+</head>
+<body>
+    <div class="container">
+        <h1>Square Calculator</h1>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button id="calculateButton">Calculate Square</button>
+        <div class="output" id="output"></div> <!-- New output div -->
+    </div>
+    <script src="logic.js"></script>
+    <script>
+        // DOM manipulation code within the HTML file
+        // Attach the calculateSquare function to the button click event
+        const calculateButton = document.getElementById("calculateButton");
+        const numberInput = document.getElementById("numberInput");
+        console.log(numberInput.value)
+        const output = document.getElementById("output"); // New output div
+        calculateButton.addEventListener("click", () => {
+            const number = parseFloat(numberInput.value);
+            const square = squareNumber(number);
+            if (square !== null) {
+                output.textContent = `The square of ${number} is ${square}`;
+            } else {
+                output.textContent = "Please enter a valid number.";
+            }
+        });
+    </script>
+</body>
+</html>

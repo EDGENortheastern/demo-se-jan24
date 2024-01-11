@@ -1,0 +1,22 @@
+{
+  "name": "demo-se-jan24",
+  "version": "1.0.0",
+  "description": "demo-se-jan24",
+  "main": "logic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDGENortheastern/demo-se-jan24.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDGENortheastern/demo-se-jan24/issues"
+  },
+  "homepage": "https://github.com/EDGENortheastern/demo-se-jan24#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
